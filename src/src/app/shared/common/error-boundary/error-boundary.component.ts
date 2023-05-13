@@ -1,5 +1,6 @@
 import { Component, ErrorHandler } from '@angular/core';
 
+// https://www.c-sharpcorner.com/article/graceful-error-handling-with-error-boundary-components-in-angular/
 @Component({
   selector: 'app-error-boundary',
   templateUrl: 'error-boundary.component.html',
