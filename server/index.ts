@@ -7,8 +7,28 @@ const app = express();
 
 app.use(express.json())
 
-app.get("/api", (req, res) => {
-  res.json({message: "Hello from server!"})
+app.get("/api/grid-data", (req, res) => {
+  res.status(200).json(
+    {
+      "values": [
+          {
+              "name": "Allison",
+              "gender": "female",
+              "hype level": 10
+          },
+          {
+              "name": "Henry",
+              "gender": "male",
+              "hype level": 6
+          },
+          {
+              "name": "Tristan",
+              "gender": "male",
+              "hype level": 6
+          }
+      ]
+    }
+  )
 })
 
 app.listen(port, () => {
