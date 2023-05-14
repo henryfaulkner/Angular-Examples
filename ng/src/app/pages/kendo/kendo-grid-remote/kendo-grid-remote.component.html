@@ -1,0 +1,19 @@
+<!-- kendo-grid-remote page -->
+<app-error-boundary>
+    <div class="kendo-grid-remote">
+        <!-- need [kendoGridBinding], NOT [data] -->
+        <kendo-grid
+            [kendoGridBinding]="(gridData | async)!"  
+            [pageSize]="5"
+            [pageable]="true"  
+        >
+            <kendo-grid-column id="name" field="name" title="Name">
+                <ng-template kendoGridCellTemplate let-dataItem>
+                    {{dataItem.name}}
+                </ng-template>
+            </kendo-grid-column>
+            <kendo-grid-column id="gender" field="gender" title="Gender"></kendo-grid-column>
+            <kendo-grid-column id="hype-level" field="hypeLevel" title="Hype Level"></kendo-grid-column>
+        </kendo-grid>
+    </div>
+</app-error-boundary>

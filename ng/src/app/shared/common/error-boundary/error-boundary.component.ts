@@ -16,6 +16,6 @@ export class ErrorBoundaryComponent {
     this.hasError = true;
     this.errorMessage = error.message || 'Something went wrong.';
     // You can log the error or perform any necessary actions here
-    console.error(error);
+    console.log(this.errorMessage);
   }
 }

@@ -40,7 +40,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "src:build:production"
+              "browserTarget": "angular-examples:build:production"
             },
             "development": {
-              "browserTarget": "src:build:development"
+              "browserTarget": "angular-examples:build:development"
             }
           },
           "defaultConfiguration": "development"
