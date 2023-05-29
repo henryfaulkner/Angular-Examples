@@ -8,11 +8,15 @@ import { CommonSharedModule } from './shared/common/common-shared.module';
 import { KendoGridRemoteComponent } from './pages/kendo/kendo-grid-remote/kendo-grid-remote.component';
 import { ErrorBoundaryComponent } from './shared/common/error-boundary/error-boundary.component';
 import { HttpClient, HttpClientModule, HttpHandler } from '@angular/common/http';
+import { ComponentLibraryComponent } from './pages/component-library/component-library.component';
+import { ModuleNavbarComponent } from './shared/module-navbar/module-navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    KendoGridRemoteComponent
+    KendoGridRemoteComponent,
+    ComponentLibraryComponent,
+    ModuleNavbarComponent
   ],
   imports: [
     BrowserModule,
